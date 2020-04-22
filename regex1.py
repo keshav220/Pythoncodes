@@ -1,8 +1,8 @@
 import re
-handle=open('regex.txt')
-hand = handle.read()
 count = 0
-match = re.findall('[0-9]+',hand)
+hand = open("regex.txt")
+lines = hand.read()
+match = re.findall('[0-9]+',lines)
 for i in match:
 	number = int(i)
 	count = count + number

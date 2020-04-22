@@ -14,7 +14,7 @@ while True:
 
     tree = ET.fromstring(data)
 
-    count = 0
+    count = 0 
     results = tree.findall('comments/comment')
     print('count :',len(results),)
     for item in results:
